@@ -17,7 +17,7 @@ O **Pomotimer** é uma aplicação web desenvolvida para ajudar você a otimizar
 
 ## Como Usar
 
-1. Abra o arquivo `index.html` em seu navegador.
+1. Abra o arquivo `index.html` em seu navegador ou clique no link do projeto.
 2. Use os botões para iniciar o timer Pomodoro, dar pausa, e iniciar o intervalo de descanso.
 3. Adicione tarefas no lado direito da tela, onde você pode inserir e visualizar suas tarefas pendentes.
 
