@@ -1,0 +1,171 @@
+/* esqueleto do site */
+body {
+    margin: 0;
+    font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 100vh;
+}
+
+.left {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.right {
+    background-color: #ebebeb; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* título */
+.title {
+    color: #004aad;
+    position: relative;
+    font-size: 70px; 
+    margin-bottom: 0%;
+    transition: color 0.5s ease;
+}
+
+.title::after { /*pro tomatinho do lado do título*/
+    content: ''; 
+    display: inline-block; 
+    width: 50px;
+    height: 50px; 
+    background: url('../imagens/pomodorolight.png') no-repeat center center;
+    background-size: contain; 
+    margin-left: 10px; 
+    vertical-align: middle;
+}
+
+/* parágrafos */
+p {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* cronômetro */
+#timer { 
+    font-size: 60px;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 30px;
+}
+
+/* botões */
+button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#startPauseButton, #pauseButton, #breakButton {
+    width: 150px; 
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #004aad;
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+#startPauseButton:hover, #pauseButton:hover, #breakButton:hover {
+    background-color: #003680; 
+}
+
+/*botão de troca de tema*/
+.tema {
+    position: absolute; 
+    top: 20px;
+    right: 20px; 
+    width: 40px; 
+    height: auto;
+    z-index: 10; 
+    cursor: pointer; 
+}
+
+/* parte de tarefas */
+.tasks {
+    color: #004aad;
+    text-align: center;
+    position: relative;
+    font-size: 40px; 
+    margin-bottom: 0%;
+    transition: color 0.5s ease;
+    }
+
+#tarefa {
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+    border-radius: 4px;
+} 
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+#listaTarefas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 5px 0; 
+    padding: 10px; 
+    max-width: 300px; 
+    word-wrap: break-word; 
+    transition: background-color 0.3s, opacity 0.5s, transform 0.5s;
+}
+
+li.remover {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#listaTarefas li:hover {
+    background-color: #f0f0f0; 
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: rgb(12, 145, 29);
+    cursor: pointer;
+    font-size: 16px; 
+    margin-left: 10px;
+}
+
+.addtask {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background-color: #004aad; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.4s; 
+    }
+    
+.addtask:hover {
+    background-color: #003680; 
+    }

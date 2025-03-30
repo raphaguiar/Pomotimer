@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomotimer</title>
+    <link rel="icon" href="../imagens/favicon.png" type="image/x-icon"> <!-- ícone que fica no título da página -->
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet"> <!-- a fonte do google fonts -->
+    <link id="themeStylesheet" rel="stylesheet" href="light-theme.css"> <!-- aplicando o css default -->
+</head>
+<body>
+    <div class="container"> <!-- criando um container para poder trabalhar com o grid -->     
+<div class="left"> <!---lado esquerdo da página --> 
+    <h1 class="title">Pomotimer</h1>
+    <p>Otimize seu tempo de estudos com o método pomodoro</p>
+        <div class="timer-container"> <!-- container do timer -->
+            <p id="timer">25:00</p>
+        </div>
+    <!-- criando os botões, os id servem para chamá-los no css e no js -->
+    <button id="startPauseButton">Pomodoro</button>
+    <button id="breakButton">Break</button>
+    <button id="pauseButton">Pausar</button>
+</div> <!-- fechando a div do lado esquerdo -->
+
+<div class="right"> <!---lado direito--> 
+    <img src="../imagens/moon.png" id="themeToggle" id="icon" class="tema" alt="Tema"> <!-- a imagem default de troca de temas, o id toggle é para chamá-la no js -->
+    <h1 class="tasks">Tarefas</h1>
+    <p>Tenha controle sobre o que estudar</p>
+    <input type="text" id="tarefa" id="myInput" placeholder="Nova tarefa">
+    <button class="addtask" id="bybtn" onclick="adicionarTarefa()">+ Adicionar</button> <!-- aqui tem um pouco de js -->
+    <ul id="listaTarefas"></ul>
+</div> <!-- fechando a div do lado direito --> 
+<script src="js.js" defer></script> <!-- aplicando o js na página -->
+</body>
+
+</html>
