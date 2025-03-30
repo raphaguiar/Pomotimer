@@ -170,11 +170,11 @@ themeToggle.addEventListener('click', () => {
 
     if (isDarkTheme) {
         themeStylesheet.setAttribute('href', 'dark-theme.css');
-        themeToggle.src = '../imagens/sun.png';
+        themeToggle.src = 'sun.png';
         localStorage.setItem('theme', 'dark'); //salvando no localstorage
     } else {
         themeStylesheet.setAttribute('href', 'light-theme.css');
-        themeToggle.src = '../imagens/moon.png';
+        themeToggle.src = 'moon.png';
         localStorage.setItem('theme', 'light'); //salvando no localstorage
     }
 });
