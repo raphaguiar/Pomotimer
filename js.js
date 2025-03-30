@@ -158,10 +158,10 @@ let isDarkTheme = localStorage.getItem('theme') === 'dark'; //verificando o tema
 //carregando o tema inicial
 if (isDarkTheme) {
     themeStylesheet.setAttribute('href', 'dark-theme.css');
-    themeToggle.src = '../imagens/sun.png'; 
+    themeToggle.src = 'sun.png'; 
 } else {
     themeStylesheet.setAttribute('href', 'light-theme.css');
-    themeToggle.src = '../imagens/moon.png';
+    themeToggle.src = 'moon.png';
 }
 
 //salvando o tema pra que quando o usuário der refresh na página o tema não volte pro defaultl
